@@ -2,6 +2,8 @@ package com.clarkelamothe.rickandmortyapp.di
 
 import com.clarkelamothe.rickandmortyapp.data.character.CharacterDataSource
 import com.clarkelamothe.rickandmortyapp.data.character.CharacterService
+import com.clarkelamothe.rickandmortyapp.data.location.LocationDataSource
+import com.clarkelamothe.rickandmortyapp.data.location.LocationService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -37,5 +39,14 @@ class DataModule {
     @Provides
     fun provideCharacterDataSource(characterService: CharacterService): CharacterDataSource {
         return CharacterDataSource(characterService)
+    }
+
+    @Provides
+    fun provideLocationService(@ApiRickAndMorty retrofit: Retrofit) =
+        retrofit.create(LocationService::class.java)
+
+    @Provides
+    fun provideLocationDataSource(locationService: LocationService): LocationDataSource {
+        return LocationDataSource(locationService)
     }
 }
