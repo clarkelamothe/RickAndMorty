@@ -1,5 +1,7 @@
 package com.clarkelamothe.rickandmortyapp.di
 
+import com.clarkelamothe.rickandmortyapp.data.character.CharacterDataSource
+import com.clarkelamothe.rickandmortyapp.data.character.CharacterService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,4 +29,13 @@ class DataModule {
     fun provideOkHttpClient() = OkHttpClient.Builder()
         .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
         .build()
+
+    @Provides
+    fun provideCharacterService(@ApiRickAndMorty retrofit: Retrofit) =
+        retrofit.create(CharacterService::class.java)
+
+    @Provides
+    fun provideCharacterDataSource(characterService: CharacterService): CharacterDataSource {
+        return CharacterDataSource(characterService)
+    }
 }
