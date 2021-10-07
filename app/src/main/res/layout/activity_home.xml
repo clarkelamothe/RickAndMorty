@@ -7,7 +7,7 @@
     tools:context=".ui.home.HomeActivity">
 
     <androidx.drawerlayout.widget.DrawerLayout
-        android:id="@+id/drawe_layout"
+        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,4 +27,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
     </androidx.drawerlayout.widget.DrawerLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

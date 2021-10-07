@@ -26,7 +26,7 @@ class HomeActivity : AppCompatActivity() {
         bottomNavigationView = binding.appBar.bottomNav
         appBarConfiguration = AppBarConfiguration(
             setOf(R.id.characterFragment, R.id.locationFragment, R.id.episodeFragment),
-            binding.draweLayout
+            binding.drawerLayout
         )
         navController = findNavController(R.id.fragmentContainerView)
         setupActionBarWithNavController(navController, appBarConfiguration)
