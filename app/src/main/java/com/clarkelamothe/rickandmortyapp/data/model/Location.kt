@@ -1,4 +1,4 @@
-package com.clarkelamothe.rickandmorty.data.model
+package com.clarkelamothe.rickandmortyapp.data.model
 
 
 data class Location(
