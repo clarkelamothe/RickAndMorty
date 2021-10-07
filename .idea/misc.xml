@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/filter_list_24px.xml" value="0.19074074074074074" />
+        <entry key="app/src/main/res/drawable-v24/splash_screen.xml" value="0.24074074074074073" />
+        <entry key="app/src/main/res/drawable/character_icon_state.xml" value="0.19074074074074074" />
+        <entry key="app/src/main/res/drawable/episode_icon_state.xml" value="0.19074074074074074" />
+        <entry key="app/src/main/res/drawable/location_icon_state.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>

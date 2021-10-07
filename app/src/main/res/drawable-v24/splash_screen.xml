@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <item>
+        <shape>
+            <solid android:color="@color/basic_black"></solid>
+        </shape>
+    </item>
+    <item
+        android:height="150dp"
+        android:gravity="center">
+        <bitmap android:src="@drawable/logo"></bitmap>
+    </item>
+</layer-list>
