@@ -1,9 +1,9 @@
-package com.clarkelamothe.rickandmorty.ui.character
+package com.clarkelamothe.rickandmortyapp.ui.character
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.clarkelamothe.rickandmorty.data.model.Result
-import com.clarkelamothe.rickandmorty.databinding.CardCharacterBinding
+import com.clarkelamothe.rickandmortyapp.data.model.Result
+import com.clarkelamothe.rickandmortyapp.databinding.CardCharacterBinding
 import com.squareup.picasso.Picasso
 
 class CharacterViewHolder(view: View) : RecyclerView.ViewHolder(view) {

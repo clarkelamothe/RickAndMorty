@@ -1,12 +1,12 @@
-package com.clarkelamothe.rickandmorty.ui.character
+package com.clarkelamothe.rickandmortyapp.ui.character
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.clarkelamothe.rickandmorty.data.Resource
-import com.clarkelamothe.rickandmorty.data.character.CharacterRepository
-import com.clarkelamothe.rickandmorty.data.model.Result
+import com.clarkelamothe.rickandmortyapp.Resource
+import com.clarkelamothe.rickandmortyapp.data.character.CharacterRepository
+import com.clarkelamothe.rickandmortyapp.data.model.Result
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

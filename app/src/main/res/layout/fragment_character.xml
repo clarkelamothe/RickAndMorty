@@ -3,13 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CharacterFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.character.CharacterFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:gravity="center"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_characters"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Character Fragment" />
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:itemCount="20"
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/card_character" />
 
 </FrameLayout>

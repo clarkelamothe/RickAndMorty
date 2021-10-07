@@ -1,11 +1,11 @@
-package com.clarkelamothe.rickandmorty.ui.character
+package com.clarkelamothe.rickandmortyapp.ui.character
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.clarkelamothe.rickandmorty.R
-import com.clarkelamothe.rickandmorty.data.model.Result
+import com.clarkelamothe.rickandmortyapp.R
+import com.clarkelamothe.rickandmortyapp.data.model.Result
 
 class CharacterAdapter(
     private var characters: List<Result>
