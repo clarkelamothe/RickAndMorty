@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:theme="@style/Theme.RickAndMorty"
             android:layout_gravity="top"
+            app:menu="@menu/menu_top"
             app:contentInsetLeft="16dp"
             app:contentInsetStart="16dp"
             app:contentInsetStartWithNavigation="0dp" />

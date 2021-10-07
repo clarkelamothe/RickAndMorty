@@ -20,6 +20,7 @@ class CharacterViewModel @Inject constructor(
     private val _characterResult = MutableLiveData<Resource<List<Result>>>()
     val characterResult: LiveData<Resource<List<Result>>> = _characterResult
 
+
     init {
         getCharacterResponse()
     }
