@@ -3,7 +3,7 @@ package com.clarkelamothe.rickandmortyapp.ui.splash
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.clarkelamothe.rickandmortyapp.home.HomeActivity
+import com.clarkelamothe.rickandmortyapp.ui.home.HomeActivity
 
 
 class SplashActivity : AppCompatActivity() {
