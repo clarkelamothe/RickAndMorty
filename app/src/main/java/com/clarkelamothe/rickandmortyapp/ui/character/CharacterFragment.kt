@@ -1,12 +1,12 @@
 package com.clarkelamothe.rickandmortyapp.ui.character
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.clarkelamothe.rickandmortyapp.R
 import com.clarkelamothe.rickandmortyapp.Resource
 import com.clarkelamothe.rickandmortyapp.databinding.FragmentCharacterBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -37,7 +37,23 @@ class CharacterFragment : Fragment() {
             }
         })
 
+        setHasOptionsMenu(true)
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_top, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.Filter -> {
+                findNavController().navigate(R.id.goToFilterCharacter)
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
 }
