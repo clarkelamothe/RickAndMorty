@@ -67,6 +67,7 @@
     <style name="button_">
         <item name="android:textSize">14sp</item>
         <item name="android:letterSpacing">0.09</item>
+        <item name="textAllCaps">true</item>
         <item name="android:textColor">@color/graybase_gray6</item>
     </style>
 

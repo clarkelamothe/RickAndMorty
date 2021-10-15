@@ -6,7 +6,7 @@
         <item name="colorPrimaryVariant">@color/accent_indigo</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondary">@color/accent_indigo</item>
         <item name="colorSecondaryVariant">@color/basic_destructive</item>
         <item name="colorOnSecondary">@color/accent_indigo</item>
         <!-- Status bar color. -->
